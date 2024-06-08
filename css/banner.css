@@ -1,0 +1,106 @@
+.banner{
+  flex-direction: row-reverse;
+  padding-top: 97px;
+  width: 100%;
+}
+.banner-img{
+  width: 60%;
+}
+.banner-slogan{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-right: 24px;
+}
+.banner-sm{
+  display: none;
+}
+
+.slogan-text{
+  text-align: left;
+}
+
+.slogan-text h2{
+  font-size: 40px;
+}
+
+.underline {
+  position: relative;
+}
+.underline-1 {
+  padding: 0 8px;
+}
+.underline-2 {
+  padding-left: 8px;
+}
+.underline-1::after {
+  position: absolute;
+  content: "";
+  background: url("../images/mark.png") no-repeat center bottom/100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 2px;
+}
+.underline-2::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/mark.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 2px;
+}
+
+.slogan-icons{
+  margin-top: 60px;
+  gap:16px;
+}
+.slogan-icon img{
+  width: 40px;
+}
+
+@media (max-width: 991.98px) {
+  .banner{
+    padding-top: 56px;
+  }
+  .banner-img,
+  .banner-slogan{
+    width: 100%;
+  }
+  .banner{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .banner-lg{
+    display: none;
+  }
+  .banner-sm{
+    display: block;
+    width: 100%;
+  }
+
+  .banner-slogan{
+    display: block;
+    margin-right: 0px;
+    padding: 40px 0;
+  }
+  .slogan-text{
+    text-align: center;
+  }
+
+  .slogan-text h2{
+    font-size: 32px;
+  }
+  .slogan-icons{
+    margin-top: 24px;
+    justify-content: center;
+  }
+}

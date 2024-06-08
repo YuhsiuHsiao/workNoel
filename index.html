@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人品牌網站</title>
+  <link rel="icon" href="/noel.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/all.css">
+  <script>
+    
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/">
+          <img src="./images/logo.svg" alt="LOGO">
+        </a>
+        <input type="checkbox" name="" id="menu-control" class="menu-control">
+        <label for="menu-control" class="menu-btn">
+          <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+          <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </label>  
+
+        <ul class="menu d-flex mx-auto my32 text-center">
+          <li class="menu-item"><a href="/">首頁</a></li>
+          <li class="menu-item"><a href="/">作品集</a></li>
+          <li class="menu-item"><a href="/">服務項目</a></li>
+          <li class="menu-item"><a href="/">部落格</a></li>
+          <li class="menu-item"><a href="/">聯絡我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="banner d-flex">
+    <div class="banner-img">
+      <img class="banner-lg" src="./images/hero-lg.png" alt="形象圖">
+      <img class="banner-sm" src="./images/hero-sm.png" alt="形象圖">
+    </div>
+    <div class="banner-slogan">
+      <div class="slogan-text">
+        <h2 class="fw-600 text-primary700">Hi！我是 Noel</h2>
+        <p class="fz-m text-primary600 mt-3">具有 10 年經驗的<span class="underline underline-1">資深 UI 設計師</span>兼<span class="underline underline-2">前端工程師</span><br>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+        <p class="fz-s text-primary400 mt-2">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
+        <ul class="d-flex slogan-icons">
+          <li class="slogan-icon"><a href=""><img src="./images/instagram.svg" alt=""></a></li>
+          <li class="slogan-icon"><a href=""><img src="./images/facebook.svg" alt=""></a></li>
+          <li class="slogan-icon"><a href=""><img src="./images/youtube.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="works pt-5">
+    <h2><span class="title">作品介紹</span></h2>
+    <ul>
+      <li class="work-item work1-bg">
+          <div class="container work h100">
+            <div class="work-img work1-bg-sm w1-img"><img src="images/homepage-work1.png" alt=""></div>
+            <div class="work-box">
+              <h3 class="fw-700">星際旅行訂票平台</h3>
+              <p class="mt-1">悠遊宇宙的夢想，從這裡開始實現</p>
+              <ul class="badgs d-flex text-primary700">
+                <li class="badge-pill">網頁設計</li>
+                <li class="badge-pill">響應式設計</li>
+                <li class="badge-pill">Bootstrap</li>
+              </ul>
+              <hr class="my40 border-white">
+              <a href="#" class="mb-2 d-flex justify-content-center">
+                <div class="detail-btn d-flex align-items-center">
+                  <span class="mr-1">完整介紹</span>
+                  <span class="material-icons">arrow_forward</span>
+                </div>
+              </a>
+            </div>
+          </div>
+      </li>
+      <li class="work-item work2-bg ps-relative">
+        <div class="even-bg ps-absolute h100"></div>
+        <div class="container work h100 row-reverse">
+          <div class="work-img work2-bg-sm"></div>
+          <div class="work-box">
+            <h3 class="fw-700">理財APP</h3>
+            <p class="mt-1">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+            <ul class="badgs d-flex text-primary700">
+              <li class="badge-pill">APP設計</li>
+              <li class="badge-pill">iOS</li>
+              <li class="badge-pill">React</li>
+            </ul>
+            <hr class="my40 border-white">
+            <a href="#" class="mb-2 d-flex justify-content-center">
+              <div class="detail-btn d-flex align-items-center">
+                <span class="mr-1">完整介紹</span>
+                <span class="material-icons">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="work-item work3-bg ps-relative">
+        <div class="gray-over ps-absolute h100"></div>
+        <div class="container work h100">
+          <div class="work-img work3-bg-sm w3-img"><img src="images/homepage-work3.png" alt=""></div>
+          <div class="work-box">
+            <h3 class="fw-700">醫美診所官網</h3>
+            <p class="mt-1">永保青春的秘密，從粹究開始</p>
+            <ul class="badgs d-flex text-primary700">
+              <li class="badge-pill">網頁設計</li>
+              <li class="badge-pill">響應式設計</li>
+              <li class="badge-pill">WordPress</li>
+            </ul>
+            <hr class="my40 border-white">
+            <a href="#" class="mb-2 d-flex justify-content-center">
+              <div class="detail-btn d-flex align-items-center">
+                <span class="mr-1">完整介紹</span>
+                <span class="material-icons">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="service py-5">
+    <h2><span class="title ">服務項目</span></h2>
+    <div class="container">
+      <ul class="service-inner d-flex mb-10">
+        <li class="serve-item"><img src="./images/service-item-visual.svg" alt=""><p>平面設計</p></li>
+        <li class="serve-item"><img src="./images/service-item-ui.svg" alt=""><p>UI 設計</p></li>
+        <li class="serve-item"><img src="./images/service-item-html&css.svg" alt=""><p>切版服務</p></li>
+        <li class="serve-item"><img src="./images/service-item-front-end.svg" alt=""><p>前端開發</p></li>
+      </ul>
+      <p class="adv-text text-center">想要合作或瞭解更多？</p>
+      <a href="#" class="d-flex justify-content-center">
+        <div class="detail-btn d-flex align-items-center">
+          <span class="mr-1">詳細內容與合作流程</span>
+          <span class="material-icons">arrow_forward</span>
+        </div>
+      </a>      
+    </div>      
+  </section>
+  <section class="writings py-5">
+    <h2><span class="title">精選文章</span></h2>
+    <div class="container">
+      <div class="swiper mb-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image1.png?raw=true" alt="blogImg01" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image2.png?raw=true" alt="blogImg02" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image3.png?raw=true" alt="blogImg03" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image4.png?raw=true" alt="blogImg04" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">虛擬實境 (VR) 介面設計對使用者沈浸感影響的研究</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image5.png?raw=true" alt="blogImg05" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">想打到目標受眾？先讓設計師跟你都瞭解他們痛在哪！</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image6.png?raw=true" alt="blogImg06" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">React vs. Vue，哪種前端框架比較好用？從三大面向談起</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image7.png?raw=true" alt="blogImg07" class="articleImg">
+            <div class="articleInfo">
+              <h3 class="articleTitle">Vision Pro 來了！UIUX 設計師的未來在哪裡？</h3>
+              <div class="articleContent">
+                <p>UI/UX 新知</p>
+                <p>2024/02/10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <a href="#" class="d-flex justify-content-center">
+      <div class="articleBtn d-flex align-items-center">
+        <span class="mr-1">更多文章</span>
+        <span class="material-icons">arrow_forward</span>
+      </div>
+    </a> 
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-inner d-flex text-primary700">
+        <div class="basic">
+          <img class="logo" src="./images/logo.svg" alt="Noel">
+          <p class="mt-3">若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</p>
+          <p class="mt-3 text-primary500">service@hexschool.com</p>
+        </div>
+        <ul class="pt-5">
+          <li><a class="comm-btn btn-dark" href="#"><img class="icon mr-1" src="./images/list.svg" alt="">填寫表單</a></li>
+          <li><a class="comm-btn mt-3" href="#"><img class="icon mr-1" src="./images/instagram.svg" alt="">hexschool_demo</a></li>
+          <li><a class="comm-btn mt-3" href="#"><img class="icon mr-1" src="./images/youtube.svg" alt="">hexschoolTW</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      grid: {
+        rows: 3,
+      },
+      breakpoints: {
+        992: {      
+          grid: { 
+            rows: 1,
+          },
+          slidesPerView: 3,
+          spaceBetween: 24,
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>

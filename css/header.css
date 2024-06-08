@@ -1,0 +1,127 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffffbb;
+  backdrop-filter: blur(5px); /* 毛玻璃效果 */
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 1000;
+}
+.menu-control, .menu-btn{
+  display: none;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* 行動版時menu要獨自一列,寬100% */
+}
+nav img{
+  height: 40px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.menu{
+  gap: 40px;
+  margin-top: 32px;
+}
+.menu .menu-item a{
+  color: #000000 !important;
+  padding: 4px 8px;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.menu .menu-item a::before,
+.menu .menu-item a::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #919191;
+  -webkit-box-reflect: below 16px; /** 鏡射 **/  
+  opacity: 0; /** 全透明 **/
+}
+.menu .menu-item a::before{
+  padding-bottom: -4px;
+  border-right: none;
+  border-bottom: none;
+  top: 0px;
+  left: 0px;
+}
+.menu .menu-item a::after{
+  border-left: none;
+  border-bottom: none;
+  top: 0;
+  right: 0;
+}
+.menu .menu-item a:hover::before,
+.menu .menu-item a:hover::after {
+  opacity: 1;
+}
+
+/* 漢堡按鈕的變化 */
+.menu-btn{  /* 讓包著兩個按鈕圖的label變成可點擊的 */
+  display: none;
+  cursor: pointer;
+  /*這個屬性會將鼠標懸停在元素上時的指針樣式設置為“手型”，通常用來指示該元素是可點擊的。
+  即使元素隱藏了，這個屬性仍然存在，但在元素隱藏的情況下，它不會起作用。當 display 屬性值改變，元素變為可見時，cursor: pointer; 就會起作用。
+  */
+}
+.menu-btn .menu-icon { /* 設定一開始要隱藏兩個漢堡選單圖 */
+  display: none;
+}
+.menu-control:checked + .menu-btn .open { /* 當類名為 .menu-control 的表單控制元素被選中（即被勾選或啟用）時，緊接其後的 .menu-btn 元素內的類名為 .open 的子元素將被隱藏。 */
+  display: none;
+}
+.menu-control:checked + .menu-btn .close {
+  display: inline;
+}
+.menu-control:not(:checked) +.menu-btn .open {
+  display: inline;
+}
+.menu-control:not(:checked) +.menu-btn .close {
+  display: none;
+}
+.menu-control {
+  display: none;
+}
+.menu-control:checked + .mark::after{
+  display: none;
+}
+.menu-control:not(:checked) + .mark::after{
+  display: inline;
+}
+
+
+
+/* 漢堡按鈕的變化 */
+
+@media (max-width: 991.98px) {
+  nav{
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  nav img{
+    height: 32px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .menu-btn{
+    display: block;
+  }
+
+  /** ul>li 清單 行動版時,一開始先隱藏；點擊後(:checked)出現 **/
+  .menu{
+    display: none;
+  }
+  .menu-control:checked ~ .menu { /* :checked 是一個偽類，用於選擇已被選中的表單控制項，例如 checkbox 或 radio。 */
+    /* 同一層從<input> ~ <ul> */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
